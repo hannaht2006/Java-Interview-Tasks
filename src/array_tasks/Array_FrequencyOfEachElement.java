@@ -52,8 +52,24 @@ public class Array_FrequencyOfEachElement {
         Arrays.stream(testArray).distinct().forEach( e ->
                 System.out.println(e+"="+Arrays.stream(testArray).filter( p -> p.equals(e)).count() ));
 
+        System.out.println("Solution 4------------");
 
+//        String [] testArray = {"Apple","Banana","Apple","Cherry"};
+        Map<String, Integer> result = new HashMap<>();
+        for(int i = 0; i< testArray.length; i++){
+            int frequent = 0;
+            for(int j = 0; j< testArray.length; j++){
+                if(testArray[i] == testArray[j]){
+                    frequent++;
+                }
+            }
+            result.put(testArray[i], frequent);
+        }
 
+        System.out.println(result);
+        for(Map.Entry<String, Integer> each: result.entrySet()){
+            System.out.println(each);
+        }
     }
 
 

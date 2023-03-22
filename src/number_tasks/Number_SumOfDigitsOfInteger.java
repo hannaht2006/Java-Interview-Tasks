@@ -23,5 +23,4 @@ public class Number_SumOfDigitsOfInteger {
         return sum;
     }
 
-
 }

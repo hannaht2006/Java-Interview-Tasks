@@ -24,6 +24,7 @@ public class Number_SumAllDigitsUntilOneDigit {
             while (number > 0) {
                 int digit = number % 10;
                 number /= 10;
+
                 sum += digit;
             }
             number = sum;

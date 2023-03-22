@@ -7,6 +7,24 @@ public class String_UniqueCharacters {
             Ex: unique("AAABBBCCCDEF") ==> "DEF";
 
      */
+    public static void main(String[] args) {
+        String letter = "AAABBBCCCDEF";
+
+        String unique = "";
+
+        for(int i=0; i< letter.length(); i++){
+            int count=0;
+            for(int j=0; j< letter.length(); j++){
+                if( letter.charAt(i)==letter.charAt(j)){
+                    count++;
+                }
+            }
+            if(count==1){
+                unique +=letter.charAt(i);
+            }
+        }
+        System.out.println(unique);
+    }
 
     public static String unique(String str) {
         String[] arr = str.split("");

@@ -7,6 +7,7 @@ public class Number_Prime {
      */
 
     public static boolean primeNumber(int num) {
+
         if (num < 2) {
             return false;
         }

@@ -2,6 +2,10 @@ package string_tasks;
 
 public class String_ReverseConsecutiveStrings {
 
+
+
+
+
     /*
     Write a program that can reverse  the consecutive strings.
             Do not use any lambda or stream or any build in reverse methods

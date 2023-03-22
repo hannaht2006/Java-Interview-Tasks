@@ -2,7 +2,6 @@ package number_tasks;
 
 public class Number_ConsecutiveNumbers {
 
-
     /*
     Write a function:
     that, given a positive integer N, prints the consecutive numbers from 1 to N, each on a separate line.

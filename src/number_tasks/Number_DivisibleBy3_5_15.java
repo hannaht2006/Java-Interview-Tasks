@@ -1,6 +1,33 @@
 package number_tasks;
 
 public class Number_DivisibleBy3_5_15 {
+    public static void main(String[] args) {
+        String divBy5 = "";
+        String divBy3 = "";
+        String divBy15 = "";
+        int[] num = new int[100];
+
+        for (int i = 0 ; i< 100; i++){
+            num[i] = i=1;
+        }
+
+        for(int each : num){
+            if (each%15 ==0 && each%3==0){
+                divBy15 += each+" ";
+            }
+            if (each%5 ==0 && each%15!=0){
+                divBy5 += each +" ";
+            }
+            if(each%3 ==0 && each%15!=0)
+                divBy3 += each+" ";
+
+        }
+
+        System.out.println(divBy15);
+        System.out.println(divBy5);
+        System.out.println(divBy3);
+    }
+
 
     /*
     Write a program that can print the numbers between 1 ~ N that can be divisible by 3, 5, and 15.

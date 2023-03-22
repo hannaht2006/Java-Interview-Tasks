@@ -2,6 +2,7 @@ package array_tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Array_WordBreakProblem {
 
@@ -41,9 +42,41 @@ public class Array_WordBreakProblem {
 
        String result = (words.size() > 0) ? "YES" : "NO";
 
+        //redo
+        System.out.println("--------------" );
+
+        List<String> letter = new ArrayList<>();
+
+        for (int i = 0; i<input.length(); i++){
+
+            for(int j = i; j<input.length(); j++){
+                String temp = "";
+                temp = input.substring(i, j+1);
+                if(Arrays.asList(dictionary).contains(temp)){
+                    if(!letter.contains(temp)){
+                        letter.add(temp);
+                    }
+                }
+            }
+        }
+String ans = (letter.size()>0)?"yes":"no";
+
     }
 
-
+public static ArrayList<String> dictionary( String s, String[] dictionary){
+        ArrayList<String> word = new ArrayList<>();
+        for(int i=0; i< s.length(); i++){
+            for(int j=i; j<s.length(); j++){
+                String temp = s.substring(i, j+1);
+                if(Arrays.asList(dictionary).contains(temp)){
+                    if(!word.contains(temp)){
+                        word.add(temp);
+                    }
+                }
+            }
+        }
+        return word;
+}
 
 
 }

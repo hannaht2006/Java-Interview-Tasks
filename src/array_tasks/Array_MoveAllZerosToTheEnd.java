@@ -2,6 +2,19 @@ package array_tasks;
 
 public class Array_MoveAllZerosToTheEnd {
 
+    public static void main(String[] args) {
+
+        int [] num = {1, 3, 8, 4, 0, 10, 0, 3, 9};
+        int [] result = new int[num.length];
+        int count = 0;
+        for(int each:num){
+            if(each !=0){
+              result[count++]= each ;
+            }
+        }
+        System.out.println(result);
+    }
+
     /*
     write a program that can move all the zeros to the end of an array
      */

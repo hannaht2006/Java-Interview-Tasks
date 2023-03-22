@@ -22,6 +22,7 @@ public class String_PalindromeSubString {
     }
 
     public static boolean isPalindrome(String s) {
+
         return s.equals(new StringBuilder(s).reverse().toString());
     }
 
