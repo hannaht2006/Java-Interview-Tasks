@@ -20,7 +20,8 @@ public class String_DisplayALlDistinctStrings {
      */
 
     public static void main(String[] args) {
-        String str = "abcd";
+        String str = "abc" +
+                "d";
         List<String> list = new ArrayList<>();
 
         for (int j = 0; j < str.length(); j++) {

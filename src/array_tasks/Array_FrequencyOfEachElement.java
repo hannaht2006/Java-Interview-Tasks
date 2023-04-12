@@ -70,6 +70,8 @@ public class Array_FrequencyOfEachElement {
         for(Map.Entry<String, Integer> each: result.entrySet()){
             System.out.println(each);
         }
+
+
     }
 
 

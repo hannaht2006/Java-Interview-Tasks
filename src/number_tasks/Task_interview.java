@@ -21,8 +21,8 @@ public class Task_interview {
             int firstNum = 0;
             int nextNum = 1;
             int result = 0;
-            for (int i = 0; i < num; i++) {
-                if (result < num - nextNum) {
+            for (int i = 1; i < num; i++) {
+                if (result <= num - nextNum) {
                     result = firstNum + nextNum;
 
                     firstNum = nextNum;
